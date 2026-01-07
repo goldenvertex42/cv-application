@@ -1,0 +1,60 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.input-group label {
+  width: 8rem;
+  margin-right: 0.8rem;
+  text-align: right;
+}
+
+.input-group input {
+  flex: 1;
+}
+
+.required-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.optional-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-submit-pair {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.general-info .edit-submit-pair {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 2;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  border: 2px white solid;
+  border-radius: 15px;
+  margin-bottom: 0.8rem;
+}
+
+.add-remove-pair {
+  display: flex;
+  gap: 0.8rem;
+  align-self: flex-end;
+}
