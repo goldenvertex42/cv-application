@@ -1,7 +1,9 @@
-export default function Button({ children, className }) {
+export default function Button({ type, disabled, children, onClick }) {
     return(
         <>
-          <button className={className}>{children}</button>
+          <button type={type}
+                  disabled={disabled}
+                  onClick={onClick}>{children}</button>
         </>
     );
 }
