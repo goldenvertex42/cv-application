@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-export default function Input({ name, type, children }) {
-  const [value, setValue] = useState('');
-  
+export default function Input({ name, type, value, onChange, children, required }) {
   return(
     <div className="input-group">
       <label htmlFor={name}>{children}</label>
@@ -11,7 +9,8 @@ export default function Input({ name, type, children }) {
         id={name} 
         name={name}
         value={value}
-        onChange={(e) => setValue(e.target.value)} />
+        onChange={onChange}
+        required={required} />
     </div>
   );
 }
