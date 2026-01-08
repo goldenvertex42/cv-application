@@ -33,7 +33,7 @@
   align-items: center;
 }
 
-.edit-submit-pair {
+.button-box {
   display: flex;
   justify-content: end;
   gap: 1rem;
@@ -53,8 +53,33 @@
   margin-bottom: 0.8rem;
 }
 
+.legend {
+  align-self: flex-end;
+}
+
+
+.display-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0.8rem;
+  border: 2px white solid;
+  border-radius: 15px;
+  margin-bottom: 0.8rem;
+}
+
+.display-pair {
+  display: grid;
+  grid-template-columns: 150px 1fr; /* Defines two columns with fixed/flexible widths */
+  gap: 10px; /* Space between columns and rows */
+}
+
+.display-title {
+  text-align: right;
+}
+
 .add-remove-pair {
   display: flex;
-  gap: 0.8rem;
+  gap: 1rem;
   align-self: flex-end;
 }
