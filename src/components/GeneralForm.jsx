@@ -55,8 +55,8 @@ export default function GeneralForm() {
           </div>}
         </div>
         <div className="button-box">
-          <Button type='button'
-                  onClick={handleEdit}>Edit</Button>
+        <Button type='button'
+          onClick={handleEdit}>Edit</Button>
         </div>
       </>
     );
@@ -79,35 +79,46 @@ export default function GeneralForm() {
   return(
       <form onSubmit={handleSubmit}>
         <div className="form-group general-inputs">
-          <Input name='fullName' 
+          <Input name='fullName'
+                 id='fullName' 
                  type='text'
                  value={formValues.fullName}
                  onChange={handleInputChange}
-                 required={true}>Full Name*:</Input>
-          <Input name='city' 
+                 required={true}
+                 autoComplete='name'>Full Name*:</Input>
+          <Input name='city'
+                 id='city' 
                  type='text'
                  value={formValues.city}
                  onChange={handleInputChange}
-                 required={true}>City*:</Input>
+                 required={true}
+                 autoComplete='address-level2'>City*:</Input>
           <Input name='phoneNumber'
+                 id='phoneNumber'
                  type='tel'
                  value={formValues.phoneNumber}
                  onChange={handleInputChange}
-                 required={true}>Phone Number*:</Input>
+                 required={true}
+                 autoComplete='tel'>Phone Number*:</Input>
           <Input name='email'
+                 id='email'
                  type='email'
                  value={formValues.email}
                  onChange={handleInputChange}
-                 required={true}>Email*:</Input>
+                 required={true}
+                 autoComplete='email'>Email*:</Input>
           <Input name='title'
+                 id='title'
                  type='text'
                  value={formValues.title}
                  onChange={handleInputChange}>Title:</Input>
           <Input name='linkedIn' 
+                 id='linkedIn'
                  type='url'
                  value={formValues.linkedIn}
                  onChange={handleInputChange}>LinkedIn URL:</Input>
           <Input name='website'
+                 id='website'
                  type='url'
                  value={formValues.website}
                  onChange={handleInputChange}>Website/Portfolio:</Input>
