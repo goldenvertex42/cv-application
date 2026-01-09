@@ -1,16 +1,17 @@
 import { useState } from "react";
 
-export default function Input({ name, type, value, onChange, children, required }) {
+export default function Input({ id, name, type, value, onChange, children, required, autoComplete }) {
   return(
     <div className="input-group">
-      <label htmlFor={name}>{children}</label>
+      <label htmlFor={id}>{children}</label>
       <input 
         type={type} 
-        id={name} 
+        id={id} 
         name={name}
         value={value}
         onChange={onChange}
-        required={required} />
+        required={required}
+        autoComplete={autoComplete} />
     </div>
   );
 }
